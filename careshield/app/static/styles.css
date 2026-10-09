@@ -1,0 +1,45 @@
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(16, 185, 129, 0.45);
+  }
+}
+
+@keyframes threat-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(244, 63, 94, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(244, 63, 94, 0.5);
+  }
+}
+
+.shield-glow {
+  animation: pulse-glow 3s infinite ease-in-out;
+}
+
+.threat-glow {
+  animation: threat-pulse 2s infinite ease-in-out;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.code-font {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
